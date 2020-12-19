@@ -22,7 +22,8 @@ def make_pole_config(env_name):
             td_steps=20,
             num_actors=35,#350 standard
             lr_init=0.5,
-            lr_decay_steps=350e3,
+            policy_w= 0.5,
+            lr_decay_steps=[350e3],
             visit_softmax_temperature_fn=visit_softmax_temperature,
             Network = PoleNet, 
             training_steps = training_steps_n,

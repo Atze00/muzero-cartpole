@@ -20,7 +20,8 @@ class MuZeroConfig(object):
             Network,
             training_steps,
             range_v = (-60,60),
-            known_bounds = None):
+            known_bounds = None,
+            policy_w= 1):
         ### Self-Play
         self.env_name = env_name
         self.action_space_size = action_space_size
@@ -41,6 +42,7 @@ class MuZeroConfig(object):
         # AlphaZero in board games.
         self.known_bounds = known_bounds
         ### Training
+        self.policy_w =policy_w
         self.training_steps =training_steps 
         self.checkpoint_interval = int(2000)
         self.window_size = int(500)#1e6
