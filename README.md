@@ -1,5 +1,7 @@
 # muzero - pytorch implementation plays cartpole
 
+pytorch implementation of ["Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"](https://arxiv.org/abs/1911.08265) based on his pseudocode. This implementation is intended to be as close as possible to the pseudocode presented.
+
 ## How is this implementation different with respect to the original paper? 
 The main difference is that this version uses the uniform distribution to samples data from the replay, instead of using prioratized experience replay.<br>
 
@@ -27,5 +29,5 @@ total_loss:<br>
 
 ## What scores can I expect to get with caterpole?
 
-Probably getting a score of 200+ is very feasable without tweaking parameters. <br>
+Getting a score of 200-250+ is very feasable without tweaking parameters. <br>
 The problem with cartpole is that the training replay gets less and less crowded with failed games, using prioritized experience replay can be a solution to this problem.<br>
