@@ -1,4 +1,4 @@
-# muzero
+# muzero - pytorch implementation plays cartpole
 
 ## How is this implementation different with respect to the original paper? 
 The main difference is that this version uses the uniform distribution to samples data from the replay, instead of using prioratized experience replay.<br>
