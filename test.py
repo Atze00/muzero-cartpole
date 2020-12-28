@@ -1,5 +1,5 @@
 from muzero.selfplay import play_game
-from atari.utils import make_pole_config
+from games.utils import make_pole_config
 import torch
 import argparse
 import time
